@@ -45,7 +45,7 @@ fixture ('Checkout feature test')
         await t.expect(checkoutPage.itemAdded.innerText).eql(LABELS.ITEM_ONE)
     })
 
-    test.only ( 'Complete a Purchase' , async t=> {
+    test ( 'Complete a Purchase' , async t=> {
         await t.expect(checkoutPage.checkoutTitle.innerText).eql(LABELS.CHECKOUT_INFORMATION)
         await checkoutPage.validMailAddressRegistration(TEST_DATA.FIRST_NAME,TEST_DATA.LAST_NAME,TEST_DATA.POSTAL_CODE)
         await checkoutPage.clickContinue()

@@ -1,8 +1,5 @@
 import { Selector ,t  } from 'testcafe'
 
-var str1 = 'div.cart_list>div:nth-child('
-var str2 = ')>div:nth-child(2)>a>div'
-var item 
 
 class ShoppingCartPage{
     

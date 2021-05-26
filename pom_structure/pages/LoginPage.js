@@ -9,7 +9,6 @@ class LoginPage{
         this.loginLogo = Selector('div.login_logo')
     }
     async submitLoginForm(username,password){
-        console.log ("-- Step : Validate Credentials")
         if (username != null ){
             await t.typeText(this.userNameField
                 ,username
