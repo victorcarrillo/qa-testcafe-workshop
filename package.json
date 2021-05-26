@@ -1,0 +1,20 @@
+{
+  "name": "qa-testcafe-workshop",
+  "version": "1.0.0",
+  "description": "Workshop TestCafe",
+  "main": "index.js",
+  "scripts": {
+    "test ": "echo \"Error: no test specified\" && exit 1",
+    "test-all-chrome": "testcafe chrome ./pom_structure/tests/",
+    "test-login-chrome": "testcafe chrome ./pom_structure/tests/Login.test.js -r json:./reports/login-exec-report.json",
+    "test-shopping-cart-chrome": "testcafe chrome ./pom_structure/tests/ShoppingCart.test.js -r json:./reports/shopping-exec-report.json",
+    "test-checkout-chrome": "testcafe chrome ./pom_structure/tests/Checkout.test.js -r json:./reports/checkout-exec-report.json",
+    "test-pom" : "testcafe chrome ./pom_structure/tests/*.js"
+  },
+  "author": "Victor Carrillo",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "testcafe-reporter-xunit": "^2.1.0"
+  }
+}
